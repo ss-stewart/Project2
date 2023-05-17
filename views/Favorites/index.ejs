@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<h2>Favorites</h2>
+
+<a href="/favorites/new">Create new list</a>
+
+<ul>
+    <% favorites.forEach(function(favorite) { %>
+        <li>
+            <form action="/favorites/<%= favorite.id %>?_method=DELETE" method="POST">
+                <button type="submit">X</button>
+            </form>
+            <a href="/favorites/<%= favorite.id %>">
+                <%= favorite.name %>
+            </a>
+        </li>
+        <% }); %>
+</ul>
+
+<%- include('../partials/footer') %>

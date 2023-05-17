@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs') %>
+
+<h3><%= favorite.name %></h3>
+
+<ul>
+    <% favorite.sketch.forEach(function(sketch) { %>
+        <li>
+            <form action="/sketch/<%= favorite.id %>/<%= sketch.id %>?_method=DELETE" method="POST">
+                <button type="submit">X</button>
+            </form>
+            <a href="/portfolio/<%= sketch.id %>">
+                <%= sketch.name %>
+            </a>
+        </li>
+        <% }); %>
+</ul>
+
+<form action="/sketch/<%= favorite.id %>" method="POST">
+    <input type="text" name="name">
+    <button type="submit">Add Sketch</button>
+</form>
+
+<a href="/favorites/<%= favorite.id %>/edit">Edit</a>
+
+<%- include('../partials/footer.ejs') %>
