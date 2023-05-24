@@ -1,7 +1,7 @@
 const Favorite = require('../models/favorite')
 
 function show(req, res, next) {
-    // fetch(`<link to api here>`)          ........................................
+    Favorite.findByID
     .then((res) => res.json())
     .then((sketch) => {
         res.render('portfolio/show', {

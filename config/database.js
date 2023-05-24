@@ -1,11 +1,11 @@
-const portfolio = require('portfolio')
+const mongoose = require('mongoose')
 
-portfolio.connect(process.env.DATABASE_URI, { ......db...db...db...db...db...
+mongoose.connect(process.env.DATABASE_URI, { 
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 })
 
-const db = portfolio.connection
+const db = mongoose.connection
 
 db.on('connected', function () {
 	console.log(`Connected to MongoDB at ${db.host}:${db.port}`)

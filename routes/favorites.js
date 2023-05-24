@@ -7,7 +7,7 @@ router.get('/', favoritesCtrl.index)
 router.get('/new', favoritesCtrl.newFavorite)
 router.post('/', favoritesCtrl.create)
 router.get('/:id', favoritesCtrl.show)
-router.get('/:id/edit', favoritesCtrl.updateFavorite)
+router.get('/:id/edit', favoritesCtrl.updateFavoriteForm)
 router.put('/:id', favoritesCtrl.update)
 router.delete('/:id', favoritesCtrl.deleteFavorite)
 

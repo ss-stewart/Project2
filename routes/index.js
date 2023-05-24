@@ -3,14 +3,9 @@ const router = express.Router();
 const passport = require('passport')
 
 router.get('/', function(req, res, next) {
-  // fetch('<api url>') .....................................
-		.then((res) => res.json())
-		.then((sketch) => {
-			res.render('portfolio/index', {
-				sketch: sketch.results,
-				title: 'Portfolio',
-			})
-		})
+  res.render('index', {
+    title: 'favorites index page'
+  })
 })
 
 router.get('/auth/google', passport.authenticate(

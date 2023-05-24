@@ -8,9 +8,7 @@
             <form action="/sketch/<%= favorite.id %>/<%= sketch.id %>?_method=DELETE" method="POST">
                 <button type="submit">X</button>
             </form>
-            <a href="/portfolio/<%= sketch.id %>">
                 <%= sketch.name %>
-            </a>
         </li>
         <% }); %>
 </ul>
