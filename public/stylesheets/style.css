@@ -9,3 +9,27 @@
     justify-content: center;
     align-items: center;
 }
+
+body {
+    background-color: powderblue;
+    text-align: center;
+}
+h1 {
+    color: blue;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 90px;  
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: fantasy;
+}
+
+  h3 {
+    color: blue;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: red;
+  }
