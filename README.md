@@ -39,7 +39,7 @@
 ![Alt text](assets/project2_trello.png)
 
 ## Link to My Reading List App
-Use this link to access https://mrl.fly.dev/
+Use this link to access https://myreadinglist.fly.dev/
 
 ## User Stories
 - As a user, I want to login
