@@ -4,7 +4,7 @@
     Use this link to access https://mrl.fly.dev/
 
 ##About App
-    My Reading List is a way to create and sort books in which they are interested, whether these are mandatory readings for scholastic purposes or leisure readings. Users are able to login(out) to create private book lists, sorted into genres.
+    My Reading List is a way to create and sort books in which they are interested, whether these are mandatory readings for scholastic purposes or leisure readings. Users are able to login(out) to create private book lists, sorted into genres. It employs a clean and intuitive design, without unnessecary embelishment.
 
 ##User Guide
     To utilize the app, users must navigate to the link above and login with their google account. After that, they can create Genre folders by navigating to the genre page and using the ‘Add Genre’ button. A user is also able to edit the names of their genres. Just as easily, a user can click into these private genre folders for details on individual folders and to add new literature titles. User lists are private.
