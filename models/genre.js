@@ -1,13 +1,13 @@
 const mongoose = require('mongoose')
-const sketchSchema = require('./sketch')
+const bookSchema = require('./book')
 
-const favoriteSchema = new mongoose.Schema(
+const genreSchema = new mongoose.Schema(
 	{
 		name: {
 			type: String,
 			required: true,
 		},
-		sketch: [sketchSchema],
+		book: [bookSchema],
 		user: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'User',
@@ -18,4 +18,4 @@ const favoriteSchema = new mongoose.Schema(
 	}
 )
 
-module.exports = mongoose.model('Favorite', favoriteSchema)
+module.exports = mongoose.model('Genre', genreSchema)

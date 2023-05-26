@@ -1,0 +1,21 @@
+<%- include('../partials/header.ejs') %>
+
+<h3>Book Detail Page</h3>
+<div class="book-container">
+    <div class="card" style="width: 18rem;">
+        <img src="<%= book.sprites.front_default %>" class="card-img-top" alt="<%= book.name %>">
+        <div class="card-body">
+            <h5 class="card-title"><%= book.name %></h5>
+            <p class="card-text"><%= book.name %> is <%= book.types[0].type.name %> type Book</p>
+        </div>
+        <ul class="list-group list-group-flush">
+        <% book.abilities.forEach(function(ability) { %>
+            <li class="list-group-item">
+                <%= ability.ability.name %>
+            </li>
+        <% }); %>
+        </ul>
+    </div>
+</div>
+
+<%- include('../partials/footer.ejs') %>

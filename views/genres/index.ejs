@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<h2>Genres</h2>
+
+<a href="/genres/new">Add A New Genre</a>
+
+<ul>
+    <% genres.forEach(function(genre) { %>
+        <li>
+            <form action="/genres/<%= genre.id %>?_method=DELETE" method="POST">
+                <button type="submit">x</button>
+            </form>
+            <a href="/genres/<%= genre.id %>">
+                <%= genre.name %>
+            </a>
+        </li>
+        <% }); %>
+</ul>
+
+<%- include('../partials/footer') %>

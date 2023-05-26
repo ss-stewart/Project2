@@ -9,8 +9,8 @@ const passport = require('passport')
 const methodOverride = require('method-override')
 
 const indexRouter = require('./routes/index')
-const favoritesRouter = require('./routes/favorites')
-const sketchRouter = require('./routes/sketch')
+const genresRouter = require('./routes/genres')
+const bookRouter = require('./routes/book')
 
 const app = express()
 
@@ -46,8 +46,8 @@ app.use(function (req, res, next) {
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', indexRouter)
-app.use('/favorites', favoritesRouter)
-app.use('/sketch', sketchRouter)
+app.use('/genres', genresRouter)
+app.use('/book', bookRouter)
 
 app.use(function (req, res, next) {
 	next(createError(404))

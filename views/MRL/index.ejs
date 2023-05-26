@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+
+<h2>MRL</h2>
+<div class="MRL-container">
+    <% book.forEach(function(book) { %>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><%= book.name %></h5>
+                <a href="/book/<%= book.name %>" class="card-link">Detail Page</a>
+            </div>
+        </div>
+    <% }); %>
+</div>
+
+
+<%- include('../partials/footer') %>

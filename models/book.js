@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const sketchSchema = new mongoose.Schema({
+const bookSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -9,4 +9,4 @@ const sketchSchema = new mongoose.Schema({
     timestamps: true
 })
 
-module.exports = sketchSchema
+module.exports = bookSchema

@@ -1,0 +1,23 @@
+<%- include('../partials/header.ejs') %>
+
+<h3><%= genre.name %></h3>
+
+<ul>
+    <% genre.book.forEach(function(book) { %>
+        <li>
+            <form action="/book/<%= genre.id %>/<%= book.id %>?_method=DELETE" method="POST">
+                <button type="submit">x</button>
+            </form>
+                <%= book.name %>
+        </li>
+        <% }); %>
+</ul>
+
+<form action="/book/<%= genre.id %>" method="POST">
+    <input type="text" name="name">
+    <button type="submit">Add literature 'Title - Auther'</button>
+</form>
+
+<a href="/genres/<%= genre.id %>/edit">Edit</a>
+
+<%- include('../partials/footer.ejs') %>
