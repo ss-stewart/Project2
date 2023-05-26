@@ -11,7 +11,7 @@
 
 ## Trello Board
     Use this link to view: https://trello.com/b/ak3buciT/project-2
-    ![Alt text](assets/project2_trello.png)
+![Alt text](assets/project2_trello.png)
 
 ## ERD
 ![Alt text](assets/project2_ERD.png)
